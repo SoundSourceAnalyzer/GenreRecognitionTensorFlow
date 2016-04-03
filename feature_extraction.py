@@ -1,4 +1,6 @@
 # W zwiazku z tym, ze narazie nie mamy wlasnego wyciagania feature'ow uzywamy do tego YAAFE
+# Moze moglibysmy uzyc tego rowniez potem
+# TODO: owinac calosc w docker razem z TensorFlowem
 from __future__ import print_function
 import numpy as np
 import os
@@ -16,15 +18,16 @@ def getFeatures(audiofile):
     afp = AudioFileProcessor()
     afp.processFile(engine,audiofile)
     feats = engine.readAllOutputs()
+    print(feats)
     afp.setOutputFormat('csv','output',{'Precision':'8'})
     afp.processFile(engine,audiofile)
-    audio = np.random.randn(1,100000)
-    feats = engine.processAudio(audio)
 
-dataset = '/data/team-project/genres/'
-for genre in os.listdir(dataset):
-    for sample in os.listdir(dataset + genre):
-        if sample.endswith('.wav'):
-            absPath = dataset + genre + '/' + sample
-            print('Working on ' + absPath)
-            getFeatures(absPath)
+getFeatures('/data/team-project/genres/rock/rock.00050.wav')
+
+# dataset = '/data/team-project/genres/'
+# for genre in os.listdir(dataset):
+#     for sample in os.listdir(dataset + genre):
+#         if sample.endswith('.wav'):
+#             absPath = dataset + genre + '/' + sample
+#             print('Working on ' + absPath)
+#             getFeatures(absPath)
