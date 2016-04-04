@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
+set -euvx
 
-sudo docker run -p 8888:8888 -v /data/team-project/GenreRecognitionTensorFlow:/notebooks -it --rm pcej/tensor-with-yaafe:latest           
+curdir=`pwd`
+sudo docker run -p 8888:8888 -v ${curdir}:/notebooks -it --rm pcej/tensor-with-yaafe:latest           
