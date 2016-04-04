@@ -1,5 +1,5 @@
 .idea
-output/
+features/
 *.tar.gz
 genres/
 # Byte-compiled / optimized / DLL files
