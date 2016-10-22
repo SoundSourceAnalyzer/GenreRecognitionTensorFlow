@@ -17,6 +17,7 @@ ENV PATH $PATH:$DEST_DIR/bin
 ENV LD_LIBRARY_PATH $LD_LIBRARY_PATH:$DEST_DIR/lib
 ENV PYTHONPATH $PYTHONPATH:$DEST_DIR/python_packages
 
+RUN apt-get install default-jre -y
 RUN pip install scikit-learn
 RUN rm -rf /notebooks/*
 WORKDIR /notebooks
