@@ -1,0 +1,27 @@
+#1: Temporal Centroid
+#2: Spectral Centroid average value
+#4-37: Audio Spectrum Envelope (ASE) average values in 
+#38: ASE average value (averaged for all frequency 
+#39-72: ASE variance values in 34 frequency bands
+#73: averaged ASE variance parameters
+#74: Audio Spectrum Centroid – average
+#75: Audio Spectrum Centroid – variance
+#76: Audio Spectrum Spread – average
+#77: Audio Spectrum Spread – variance
+#78-101: Spectral Flatness Measure (SFM) average values 
+#102: SFM average value (averaged for all frequency 
+#103-126: Spectral Flatness Measure (SFM) variance 
+#127: averaged SFM variance parameters
+#128-147: 20 first mel cepstral coefficients average
+#148: Harmonic Spectral Centroid
+#149: Harmonic Spectral Deviation
+#150: Harmonic Spectral Spread
+#151: Harmonic Spectral Variation
+#152: Audio Fundamental Frequency - average
+#153: Audio Fundamental Frequency - variance
+#154: Audio Harmonicity - Harmonic Ratio - average
+#155: Audio Harmonicity - Harmonic Ratio - variance
+#156: Audio Harmonicity - Upper limit Harmonicity - average
+#157: Audio Harmonicity - Upper limit Harmonicity - variance
+#158: Audio Power - average
+#159: Audio Power - variance
