@@ -25,7 +25,11 @@
 #157: Audio Harmonicity - Upper limit Harmonicity - variance
 #158: Audio Power - average
 #159: Audio Power - variance
-#160-169: Audio Spectrum Projection average values for bands
-#170: Audio Spectrum Projection averaged all bands
-#171-180: Audio Spectrum Projection variance values for bands
-#181: Audio Spectrum Projection averaged variance for all bands
+#160-168: Audio Spectrum Projection average values for bands
+#169: Audio Spectrum Projection averaged all bands
+#170-178: Audio Spectrum Projection variance values for bands
+#179: Audio Spectrum Projection averaged variance for all bands
+#180-187: Spectrum Basis average values for bands
+#188: Spectrum Basis averaged all bands
+#189-196: Spectrum Basis variance values for bands
+#197: Spectrum Basis averaged variance for all bands
